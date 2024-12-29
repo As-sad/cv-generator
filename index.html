@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>cv generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    
+    <div id="div">
+        <div id="generate"><img src="../cvgenerator/cv-logo-template-icon-isolated-on-black-background-png_130993.jpg" ></div><br>
+        <h1> GENERATOR </h1><br>
+        <input type="text" id="name" placeholder="enter your name" required>
+        <input type="text" id="fname" placeholder="enter your fathername" required><br>
+        <input type="email" id="email" placeholder="enter your email" required><br>
+        <input type="tel" id="num" name="contact" pattern="[0-9]{4}-[0-9]{7}" placeholder=" contact: XXXX-XXXXXXX" required> <br>
+        <input type="text" id="institute" placeholder="enter your institute" required><br>
+        <input type="text" id="options" list="options-list" placeholder="Enter your Degree" required>
+        <datalist id="options-list" >
+            <option value="matric/A-level"></option>
+            <option value="itnermediate/O-level"></option>
+            <option value="bachelors"></option>
+            <option value="Masters"></option>
+        </datalist> <br>
+        <input type="date" id="date" placeholder="Date of birth"><br>
+        <input id="cnic" name="cnic" placeholder="enter cnic: XXXXX-XXXXXXX-X" required><br>
+        <input type="file" id="fileinput" name="file" required>
+        <img id="image-preview" src="" alt="Image preview" style="display: none;" >
+        <textarea id="paragraph" placeholder="write something about yourself"></textarea>
+        <br>
+        <button id="btn" onclick="addTask()">SUBMIT</button>
+    </div >
+    <div id="template">
+    <div id="div1" class="div" style="background-image: linear-gradient(rgb(255, 255, 255),wheat);" ></div>
+    <div id="div2" class="div" style="background-image: linear-gradient(rgb(181, 181, 181),rgb(75, 75, 75));"></div>
+    <div id="div3" class="div" style="background-image: linear-gradient(rgb(222, 178, 56),rgb(85, 65, 10));"></div>
+    </div>
+    <div id="show">
+        <h1>YOUR CV </h1>
+    <div id="showimg"></div>
+    <div id="reader"></div>
+    <div id="shownn"></div>
+    <div id="shownf"></div>
+    <div id="showne"></div>
+    <div id="shownnu"></div>
+    <div id="showni"></div>
+    <div id="showno"></div>
+    <div id="shownd"></div>
+    <div id="shownc"></div>
+    <div id="shownp"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</htm>
